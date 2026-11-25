@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <radialGradient id="neuralGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.8" />
+      <stop offset="45%" stop-color="#4F46E5" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#312E81" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#06B6D4" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.1" />
+    </linearGradient>
+    <linearGradient id="wave2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Dark Background -->
+  <rect width="600" height="400" rx="24" fill="#090D1A" />
+  
+  <!-- Subtle Grid lines -->
+  <g opacity="0.1" stroke="#818CF8" stroke-width="1">
+    <line x1="0" y1="100" x2="600" y2="100" />
+    <line x1="0" y1="200" x2="600" y2="200" />
+    <line x1="0" y1="300" x2="600" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="400" />
+    <line x1="300" y1="0" x2="300" y2="400" />
+    <line x1="450" y1="0" x2="450" y2="400" />
+  </g>
+
+  <!-- Central Glowing Orb -->
+  <circle cx="300" cy="200" r="160" fill="url(#neuralGlow)" />
+  <circle cx="300" cy="200" r="85" fill="#4338CA" opacity="0.3" filter="blur(10px)" />
+  <circle cx="300" cy="200" r="60" fill="#6366F1" opacity="0.5" filter="blur(6px)" />
+  <circle cx="300" cy="200" r="35" fill="#A5B4FC" opacity="0.9" filter="blur(2px)" />
+
+  <!-- Concentric Soundwave Ripples -->
+  <ellipse cx="300" cy="200" rx="120" ry="60" fill="none" stroke="#06B6D4" stroke-width="2" opacity="0.75" />
+  <ellipse cx="300" cy="200" rx="170" ry="85" fill="none" stroke="#818CF8" stroke-width="1.5" opacity="0.5" />
+  <ellipse cx="300" cy="200" rx="220" ry="110" fill="none" stroke="#C084FC" stroke-width="1" opacity="0.35" />
+  <ellipse cx="300" cy="200" rx="260" ry="130" fill="none" stroke="#4F46E5" stroke-width="1" opacity="0.2" />
+
+  <!-- Sine Waveform Audio Streams -->
+  <path d="M50 200 Q 112 130, 175 200 T 300 200 T 425 200 T 550 200" fill="none" stroke="url(#wave1)" stroke-width="3.5" />
+  <path d="M50 200 Q 112 250, 175 200 T 300 200 T 425 200 T 550 200" fill="none" stroke="url(#wave2)" stroke-width="2.5" />
+
+  <!-- Neural Audio Nodes -->
+  <circle cx="175" cy="200" r="5" fill="#06B6D4" />
+  <circle cx="300" cy="200" r="8" fill="#FFFFFF" />
+  <circle cx="425" cy="200" r="5" fill="#A855F7" />
+  <circle cx="240" cy="160" r="3.5" fill="#38BDF8" opacity="0.8" />
+  <circle cx="360" cy="240" r="3.5" fill="#C084FC" opacity="0.8" />
+  <circle cx="340" cy="150" r="3" fill="#818CF8" opacity="0.7" />
+  <circle cx="260" cy="250" r="3" fill="#34D399" opacity="0.7" />
+
+  <!-- Digital Badge Tag -->
+  <rect x="220" y="32" width="160" height="28" rx="14" fill="#1E1B4B" stroke="#4F46E5" stroke-width="1" />
+  <circle cx="236" cy="46" r="4" fill="#10B981" />
+  <text x="248" y="50" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" fill="#E0E7FF">Sambhash Voice AI 2.0</text>
+</svg>

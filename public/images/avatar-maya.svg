@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#4338CA" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8A87C" />
+      <stop offset="100%" stop-color="#C38D64" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312E81" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="60" cy="60" r="58" fill="url(#bgGrad)" stroke="#818CF8" stroke-width="2" />
+  
+  <!-- Modern Clothes / Blazer -->
+  <path d="M25 110 C25 85, 40 78, 60 78 C80 78, 95 85, 95 110 Z" fill="url(#suitGrad)" />
+  <path d="M50 78 L60 92 L70 78 Z" fill="#FFFFFF" />
+  
+  <!-- Neck -->
+  <rect x="52" y="65" width="16" height="18" rx="4" fill="url(#skinGrad)" />
+  
+  <!-- Face -->
+  <ellipse cx="60" cy="50" rx="19" ry="22" fill="url(#skinGrad)" />
+  
+  <!-- Hair (Sleek professional) -->
+  <path d="M41 48 C40 28, 79 26, 79 48 C77 34, 43 34, 41 48 Z" fill="url(#hairGrad)" />
+  <path d="M38 52 C38 42, 45 35, 60 35 C75 35, 82 42, 82 52 C82 56, 80 62, 79 66 C77 60, 77 46, 73 42 C68 38, 52 38, 47 42 C43 46, 43 60, 41 66 C40 62, 38 56, 38 52 Z" fill="url(#hairGrad)" />
+  
+  <!-- Eyes -->
+  <ellipse cx="53" cy="49" rx="2.5" ry="2.8" fill="#1E1B4B" />
+  <ellipse cx="67" cy="49" rx="2.5" ry="2.8" fill="#1E1B4B" />
+  
+  <!-- Smile -->
+  <path d="M54 59 Q60 64 66 59" stroke="#9A3412" stroke-width="2" stroke-linecap="round" fill="none" />
+  
+  <!-- Tech Headset with subtle LED glow -->
+  <path d="M41 48 C41 33, 79 33, 79 48" stroke="#E2E8F0" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.85" />
+  <rect x="38" y="46" width="5" height="10" rx="2.5" fill="#E2E8F0" />
+  <rect x="77" y="46" width="5" height="10" rx="2.5" fill="#E2E8F0" />
+  <path d="M79 53 C79 64, 70 68, 65 67" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="64" cy="67" r="2.5" fill="#10B981" />
+</svg>

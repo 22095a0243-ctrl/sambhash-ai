@@ -1,0 +1,9 @@
+# Exclude everything by default
+*
+# Include essential production files
+!.next/
+!public/
+!src/
+!package.json
+!next.config.js
+!README.md
