@@ -41,29 +41,29 @@ export default function TrustReliability() {
   ];
 
   return (
-    <section className="py-20 bg-white border-b border-slate-200/70">
+    <section className="py-12 sm:py-20 lg:py-24 bg-white border-b border-slate-200/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
           <span className="text-xs font-semibold tracking-wider uppercase text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">
             Trust & Architecture
           </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+          <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900">
             Built Around Clear, Controlled Workflows.
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+          <p className="mt-3 text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed">
             Our platform is engineered for predictability, transparency, and operational security — giving your team complete control over automated interactions.
           </p>
         </div>
 
         {/* 5 Trust Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {pillars.map((pillar, idx) => {
             const Icon = pillar.icon;
             return (
               <div
                 key={idx}
-                className="rounded-xl border border-slate-200/90 bg-slate-50/40 p-6 shadow-sm hover:border-slate-300 transition-colors"
+                className="rounded-xl border border-slate-200/90 bg-slate-50/40 p-5 sm:p-6 shadow-sm hover:border-slate-300 transition-colors"
               >
                 <div className="w-11 h-11 rounded-lg bg-white text-indigo-600 border border-slate-200 flex items-center justify-center mb-4 shadow-xs">
                   <Icon className="w-5 h-5" />

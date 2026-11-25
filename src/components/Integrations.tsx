@@ -100,27 +100,27 @@ export default function Integrations() {
   ];
 
   return (
-    <section className="py-20 sm:py-24 bg-white border-b border-slate-200/70 relative">
+    <section className="py-12 sm:py-20 lg:py-24 bg-white border-b border-slate-200/70 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-xs font-semibold text-indigo-700">
             <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
             <span>Zero-Friction Integrations</span>
           </div>
-          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-4xl font-extrabold tracking-tight text-slate-900">
+          <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-slate-900">
             Seamlessly Plug into Your Existing Tech Stack.
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+          <p className="mt-3 text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed">
             Sambhash AI connects effortlessly with your current CRM, messaging channels, and automation tools via webhooks, native connectors, and REST APIs.
           </p>
         </div>
 
         {/* Visual Workflow Automation Diagram */}
-        <div className="mb-16 rounded-3xl border border-slate-200/90 bg-gradient-to-br from-slate-50 via-white to-indigo-50/30 p-6 sm:p-8 shadow-sm overflow-hidden relative">
+        <div className="mb-10 sm:mb-16 rounded-2xl sm:rounded-3xl border border-slate-200/90 bg-gradient-to-br from-slate-50 via-white to-indigo-50/30 p-4 sm:p-8 shadow-sm overflow-hidden relative">
           
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-200/80 pb-4 mb-6 gap-2">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-200/80 pb-4 mb-4 sm:mb-6 gap-2">
             <div className="flex items-center gap-2">
               <Zap className="w-4 h-4 text-indigo-600" />
               <span className="text-xs font-bold uppercase tracking-wider text-slate-700">
@@ -135,11 +135,11 @@ export default function Integrations() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4 relative z-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4 relative z-10">
             {workflowSteps.map((wf, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl border border-slate-200/80 p-4 shadow-2xs relative flex flex-col justify-between hover:border-indigo-300 hover:shadow-md transition-all duration-200 group"
+                className="bg-white rounded-xl sm:rounded-2xl border border-slate-200/80 p-3.5 sm:p-4 shadow-2xs relative flex flex-col justify-between hover:border-indigo-300 hover:shadow-md transition-all duration-200 group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-2">

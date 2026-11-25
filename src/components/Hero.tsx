@@ -150,27 +150,31 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-b from-indigo-50/40 via-white to-slate-50/50 border-b border-slate-200/70">
+    <section className="relative pt-24 pb-12 sm:pt-32 sm:pb-16 md:pt-36 md:pb-24 overflow-hidden bg-gradient-to-b from-indigo-50/40 via-white to-slate-50/50 border-b border-slate-200/70">
       {/* Background Decorative Ambient Blobs & Dot Pattern */}
       <div className="absolute inset-0 bg-grid-pattern opacity-60 pointer-events-none"></div>
-      <div className="absolute top-12 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-pink-500/5 blur-3xl rounded-full pointer-events-none"></div>
+      <div className="absolute top-12 left-1/2 -translate-x-1/2 w-[350px] sm:w-[600px] lg:w-[700px] h-[250px] sm:h-[350px] bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-pink-500/5 blur-3xl rounded-full pointer-events-none"></div>
       {/* Hero Banner Illustration */}
-      <img src="/images/hero-banner.svg" alt="AI Voice Calls illustration" className="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-20" />
+      <img
+        src="/images/hero-banner.svg"
+        alt="AI Voice Calls illustration"
+        className="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-15"
+      />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           
           {/* Left Column: Value Proposition & CTAs */}
-          <div className="lg:col-span-6 space-y-6 text-center lg:text-left">
+          <div className="lg:col-span-6 space-y-4 sm:space-y-6 text-center lg:text-left">
             {/* Pill Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200/80 text-xs font-semibold text-indigo-700 shadow-sm hover:bg-indigo-100/70 transition-colors">
-              <span className="flex h-2 w-2 rounded-full bg-indigo-600 animate-ping"></span>
-              <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
-              <span>Next-Gen Indian Voice AI Platform • Sub-650ms Latency</span>
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-indigo-50 border border-indigo-200/80 text-[11px] sm:text-xs font-semibold text-indigo-700 shadow-xs hover:bg-indigo-100/70 transition-colors">
+              <span className="flex h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-indigo-600 animate-ping"></span>
+              <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-indigo-600 flex-shrink-0" />
+              <span className="truncate">Next-Gen Indian Voice AI • Sub-650ms Latency</span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-extrabold tracking-tight text-slate-900 leading-[1.12]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-extrabold tracking-tight text-slate-900 leading-[1.16] sm:leading-[1.12]">
               Turn Every Phone Call Into a{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-indigo-700 to-purple-600">
                 High-Converting
@@ -179,25 +183,25 @@ export default function Hero() {
             </h1>
 
             {/* Sub-headline */}
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            <p className="text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Deploy human-grade AI voice agents that speak fluent <strong className="text-slate-800 font-semibold">Hindi, Hinglish, & regional accents</strong>. Qualify leads within 15 seconds, automate follow-ups, and integrate with CRM & WhatsApp at just <strong className="text-indigo-600 font-semibold">₹3.50/min</strong>.
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2.5 sm:gap-3.5 pt-1 sm:pt-2 w-full">
               <Link
                 href="/signup"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-md shadow-indigo-600/25 hover:shadow-lg hover:shadow-indigo-600/35 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transform hover:-translate-y-0.5"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-md shadow-indigo-600/25 hover:shadow-lg hover:shadow-indigo-600/35 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transform hover:-translate-y-0.5"
               >
-                <span>Start Free Trial (Get ₹100 Credits)</span>
+                <span>Start Free Trial (₹100 Credits)</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <button
                 type="button"
                 onClick={() => setIsLiveCallModalOpen(true)}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-semibold text-slate-800 bg-white hover:bg-slate-50 border border-slate-200/90 hover:border-indigo-400 rounded-xl shadow-sm transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-indigo-400 group"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-slate-800 bg-white hover:bg-slate-50 border border-slate-200/90 hover:border-indigo-400 rounded-xl shadow-xs transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-indigo-400 group"
               >
-                <div className="relative flex items-center justify-center">
+                <div className="relative flex items-center justify-center flex-shrink-0">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                   <span className="absolute w-3.5 h-3.5 rounded-full border border-emerald-400 animate-ping"></span>
                 </div>
@@ -207,97 +211,86 @@ export default function Hero() {
             </div>
 
             {/* Feature Highlights Pills */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-4 pt-1 text-xs text-slate-500 font-medium">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-y-1.5 gap-x-3 sm:gap-x-4 pt-1 text-[11px] sm:text-xs text-slate-500 font-medium">
               <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                No setup fees or hidden contracts
+                <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-600 flex-shrink-0" />
+                No setup fees
               </span>
               <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-600 flex-shrink-0" />
                 TRAI & DND compliant
               </span>
               <span className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-600 flex-shrink-0" />
                 Instant n8n & CRM Webhooks
               </span>
             </div>
 
             {/* Metrics Counters */}
-            <div className="pt-5 border-t border-slate-200/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-left">
-              <div className="bg-white/80 backdrop-blur-sm p-3 rounded-xl border border-slate-200/80 shadow-sm">
-                <div className="text-2xl font-extrabold text-slate-900 tracking-tight">1.4M+</div>
-                <div className="text-[11px] font-medium text-slate-500 mt-0.5">Calls Automated</div>
+            <div className="pt-4 sm:pt-5 border-t border-slate-200/80 grid grid-cols-3 gap-2 sm:gap-4 max-w-lg mx-auto lg:mx-0 text-left">
+              <div className="bg-white/90 backdrop-blur-sm p-2.5 sm:p-3 rounded-xl border border-slate-200/80 shadow-xs">
+                <div className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">1.4M+</div>
+                <div className="text-[10px] sm:text-[11px] font-medium text-slate-500 mt-0.5">Calls Automated</div>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm p-3 rounded-xl border border-slate-200/80 shadow-sm">
-                <div className="text-2xl font-extrabold text-indigo-600 tracking-tight">&lt;650ms</div>
-                <div className="text-[11px] font-medium text-slate-500 mt-0.5">Voice Latency</div>
+              <div className="bg-white/90 backdrop-blur-sm p-2.5 sm:p-3 rounded-xl border border-slate-200/80 shadow-xs">
+                <div className="text-xl sm:text-2xl font-extrabold text-indigo-600 tracking-tight">&lt;650ms</div>
+                <div className="text-[10px] sm:text-[11px] font-medium text-slate-500 mt-0.5">Voice Latency</div>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm p-3 rounded-xl border border-slate-200/80 shadow-sm">
-                <div className="text-2xl font-extrabold text-emerald-600 tracking-tight">72%</div>
-                <div className="text-[11px] font-medium text-slate-500 mt-0.5">Cost Reduction</div>
+              <div className="bg-white/90 backdrop-blur-sm p-2.5 sm:p-3 rounded-xl border border-slate-200/80 shadow-xs">
+                <div className="text-xl sm:text-2xl font-extrabold text-emerald-600 tracking-tight">72%</div>
+                <div className="text-[10px] sm:text-[11px] font-medium text-slate-500 mt-0.5">Cost Reduction</div>
               </div>
             </div>
           </div>
 
           {/* Right Column: High-Fidelity Interactive Voice Agent Simulation */}
-          <div className="lg:col-span-6 relative">
+          <div className="lg:col-span-6 relative w-full">
             
-            {/* Floating Live Latency Badge (Animated) */}
-            <div className="hidden sm:flex items-center gap-2.5 absolute -top-5 -right-2 z-20 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-2xl border border-slate-200/90 shadow-lg shadow-indigo-900/10 animate-float text-xs font-semibold text-slate-800">
+            {/* Floating Live Latency Badge (Desktop) */}
+            <div className="hidden md:flex items-center gap-2 absolute -top-4 -right-2 z-20 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-2xl border border-slate-200/90 shadow-md shadow-indigo-900/10 text-xs font-semibold text-slate-800">
               <div className="relative flex items-center justify-center">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span className="absolute w-4 h-4 rounded-full border border-emerald-400 animate-ping"></span>
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span className="absolute w-3.5 h-3.5 rounded-full border border-emerald-400 animate-ping"></span>
               </div>
               <span>Turn Latency: <strong className="text-indigo-600">420ms</strong></span>
-              <span className="text-[10px] bg-indigo-50 text-indigo-700 px-1.5 py-0.5 rounded font-mono font-bold">Live Stream</span>
+              <span className="text-[10px] bg-indigo-50 text-indigo-700 px-1.5 py-0.5 rounded font-mono font-bold">Live</span>
             </div>
 
-            {/* Floating Live Lead Outcome Badge (Animated) */}
-            <div className="hidden sm:flex items-center gap-2.5 absolute -bottom-5 -left-2 z-20 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-2xl border border-slate-200/90 shadow-lg shadow-indigo-900/10 animate-float-slow text-xs font-semibold text-slate-800">
-              <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0">
-                <CheckCircle2 className="w-4 h-4" />
-              </div>
-              <div>
-                <div className="text-[11px] font-bold text-slate-900">Prospect Qualified</div>
-                <div className="text-[10px] text-slate-500">Site visit booked • WhatsApp dispatched</div>
-              </div>
-            </div>
-
-            <div className="relative mx-auto max-w-xl lg:max-w-none rounded-2xl border border-slate-200/90 bg-white/95 backdrop-blur-sm p-5 sm:p-6 shadow-2xl shadow-indigo-900/10 ring-1 ring-slate-900/5">
+            <div className="relative mx-auto w-full max-w-xl lg:max-w-none rounded-2xl sm:rounded-3xl border border-slate-200/90 bg-white/95 backdrop-blur-sm p-3.5 sm:p-6 shadow-xl shadow-indigo-900/10 ring-1 ring-slate-900/5">
               
               {/* Header Bar with Agent Switcher Tabs */}
-              <div className="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
-                <div className="flex items-center gap-1.5">
-                  <div className="flex gap-1.5 mr-2">
-                    <span className="w-2.5 h-2.5 rounded-full bg-rose-400"></span>
-                    <span className="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
-                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+              <div className="flex items-center justify-between border-b border-slate-100 pb-2.5 sm:pb-3 mb-3 sm:mb-4 gap-2">
+                <div className="flex items-center gap-1.5 min-w-0">
+                  <div className="flex gap-1 mr-1.5 flex-shrink-0">
+                    <span className="w-2 h-2 rounded-full bg-rose-400"></span>
+                    <span className="w-2 h-2 rounded-full bg-amber-400"></span>
+                    <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
                   </div>
-                  <span className="text-xs font-mono font-medium text-slate-500">
+                  <span className="text-[11px] font-mono font-medium text-slate-500 truncate">
                     live.sambhashai.com
                   </span>
                 </div>
 
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
                   <button
                     type="button"
                     onClick={() => setIsLiveCallModalOpen(true)}
-                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-all transform hover:scale-105"
+                    className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] sm:text-[11px] font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-xs transition-all"
                   >
-                    <PhoneCall className="w-3 h-3" />
-                    <span>Speak Live with Maya</span>
+                    <PhoneCall className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
+                    <span>Speak Live</span>
                   </button>
-                  <span className="hidden sm:inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-sm">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span>Active Stream</span>
+                  <span className="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span>Stream</span>
                   </span>
                 </div>
               </div>
 
               {/* Agent Selector Badges */}
-              <div className="flex items-center gap-2 mb-4 overflow-x-auto pb-1">
-                <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 flex-shrink-0">
-                  Switch Agent:
+              <div className="flex items-center gap-1.5 mb-3 sm:mb-4 overflow-x-auto pb-1 scrollbar-none">
+                <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-400 flex-shrink-0">
+                  Agent:
                 </span>
                 {agents.map((ag, idx) => (
                   <button
@@ -306,27 +299,27 @@ export default function Hero() {
                       setActiveAgentIndex(idx);
                       setCallTimer(95 + idx * 30);
                     }}
-                    className={`px-3 py-1 rounded-lg text-xs font-medium transition-all flex-shrink-0 flex items-center gap-1.5 ${
+                    className={`px-2.5 py-1 rounded-lg text-xs font-medium transition-all flex-shrink-0 flex items-center gap-1 ${
                       activeAgentIndex === idx
-                        ? "bg-indigo-600 text-white shadow-sm font-semibold"
+                        ? "bg-indigo-600 text-white shadow-xs font-semibold"
                         : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                     }`}
                   >
                     <span>{ag.name}</span>
-                    <span className="text-[10px] opacity-80">({ag.industry})</span>
+                    <span className="text-[10px] opacity-75">({ag.industry})</span>
                   </button>
                 ))}
               </div>
 
               {/* Active Voice Agent Profile Card */}
-              <div className="rounded-xl bg-gradient-to-r from-slate-50 via-indigo-50/30 to-purple-50/20 border border-slate-200/80 p-4 mb-4">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                  <div className="flex items-center gap-3">
-                    <div className="relative">
+              <div className="rounded-xl bg-gradient-to-r from-slate-50 via-indigo-50/30 to-purple-50/20 border border-slate-200/80 p-3 sm:p-4 mb-3 sm:mb-4">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3">
+                  <div className="flex items-center gap-2.5 sm:gap-3">
+                    <div className="relative flex-shrink-0">
                       {isPlaying && (
-                        <div className="sound-ring w-14 h-14 -top-1 -left-1 pointer-events-none"></div>
+                        <div className="sound-ring w-12 h-12 sm:w-14 sm:h-14 -top-1 -left-1 pointer-events-none"></div>
                       )}
-                      <div className={`w-12 h-12 rounded-xl ${currentAgent.avatarBg} text-white font-bold flex items-center justify-center text-base shadow-sm overflow-hidden relative border border-white/20`}>
+                      <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl ${currentAgent.avatarBg} text-white font-bold flex items-center justify-center text-sm sm:text-base shadow-xs overflow-hidden relative border border-white/20`}>
                         {currentAgent.avatarImage ? (
                           <img
                             src={currentAgent.avatarImage}
@@ -342,38 +335,38 @@ export default function Hero() {
                         </span>
                       </div>
                     </div>
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-base font-bold text-slate-900">{currentAgent.name}</span>
-                        <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-700 border border-indigo-200">
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        <span className="text-sm sm:text-base font-bold text-slate-900">{currentAgent.name}</span>
+                        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-700 border border-indigo-200">
                           {currentAgent.tag}
                         </span>
                       </div>
-                      <p className="text-xs text-slate-500 mt-0.5">{currentAgent.title}</p>
+                      <p className="text-[11px] sm:text-xs text-slate-500 mt-0.5 truncate">{currentAgent.title}</p>
                     </div>
                   </div>
 
                   {/* Audio Controls & Equalizer */}
-                  <div className="flex items-center gap-3 bg-white border border-slate-200/80 px-3 py-2 rounded-xl shadow-sm">
+                  <div className="flex items-center justify-between sm:justify-end gap-2 sm:gap-3 bg-white border border-slate-200/80 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-xl shadow-xs">
                     <button
                       onClick={() => setIsPlaying(!isPlaying)}
                       className="p-1.5 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-600 transition-colors"
                       title={isPlaying ? "Pause simulated voice" : "Play voice"}
                     >
-                      {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4 fill-indigo-600" />}
+                      {isPlaying ? <Pause className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> : <Play className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-indigo-600" />}
                     </button>
 
                     {/* Waveform Visualization */}
-                    <div className="flex items-center gap-1 h-6">
-                      <span className={`w-1 bg-indigo-500 rounded-full ${isPlaying ? "animate-waveform-1" : "h-2"}`}></span>
-                      <span className={`w-1 bg-indigo-500 rounded-full ${isPlaying ? "animate-waveform-2" : "h-3"}`}></span>
-                      <span className={`w-1 bg-indigo-600 rounded-full ${isPlaying ? "animate-waveform-3" : "h-5"}`}></span>
-                      <span className={`w-1 bg-indigo-600 rounded-full ${isPlaying ? "animate-waveform-4" : "h-3"}`}></span>
-                      <span className={`w-1 bg-indigo-400 rounded-full ${isPlaying ? "animate-waveform-5" : "h-4"}`}></span>
-                      <span className={`w-1 bg-indigo-500 rounded-full ${isPlaying ? "animate-waveform-6" : "h-2"}`}></span>
+                    <div className="flex items-center gap-1 h-5 sm:h-6">
+                      <span className={`w-1 bg-indigo-500 rounded-full ${isPlaying ? "animate-waveform-1" : "h-1.5"}`}></span>
+                      <span className={`w-1 bg-indigo-500 rounded-full ${isPlaying ? "animate-waveform-2" : "h-2.5"}`}></span>
+                      <span className={`w-1 bg-indigo-600 rounded-full ${isPlaying ? "animate-waveform-3" : "h-4"}`}></span>
+                      <span className={`w-1 bg-indigo-600 rounded-full ${isPlaying ? "animate-waveform-4" : "h-2.5"}`}></span>
+                      <span className={`w-1 bg-indigo-400 rounded-full ${isPlaying ? "animate-waveform-5" : "h-3"}`}></span>
+                      <span className={`w-1 bg-indigo-500 rounded-full ${isPlaying ? "animate-waveform-6" : "h-1.5"}`}></span>
                     </div>
 
-                    <div className="text-xs font-mono font-semibold text-slate-700 flex items-center gap-1 border-l border-slate-200 pl-2">
+                    <div className="text-[11px] sm:text-xs font-mono font-semibold text-slate-700 flex items-center gap-1 border-l border-slate-200 pl-2">
                       <Clock className="w-3 h-3 text-slate-400" />
                       {formatTimer(callTimer)}
                     </div>
@@ -382,51 +375,51 @@ export default function Hero() {
               </div>
 
               {/* Lead & Campaign Quick Metrics */}
-              <div className="grid grid-cols-2 gap-3 mb-4">
-                <div className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm">
-                  <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Connected Prospect</div>
-                  <div className="font-bold text-slate-900 text-sm mt-0.5">{currentAgent.leadName}</div>
-                  <div className="text-xs text-slate-500">{currentAgent.leadPhone}</div>
-                  <div className="mt-2 inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
-                    <BadgeCheck className="w-3 h-3" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-3 sm:mb-4">
+                <div className="rounded-xl border border-slate-200 bg-white p-2.5 sm:p-3 shadow-xs">
+                  <div className="text-[10px] font-medium text-slate-400 uppercase tracking-wider">Connected Prospect</div>
+                  <div className="font-bold text-slate-900 text-xs sm:text-sm mt-0.5">{currentAgent.leadName}</div>
+                  <div className="text-[11px] text-slate-500">{currentAgent.leadPhone}</div>
+                  <div className="mt-1.5 inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
+                    <BadgeCheck className="w-3 h-3 flex-shrink-0" />
                     <span>{currentAgent.intent}</span>
                   </div>
                 </div>
 
-                <div className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm">
-                  <div className="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Campaign & Budget</div>
-                  <div className="font-bold text-slate-900 text-sm mt-0.5 truncate">{currentAgent.campaign}</div>
-                  <div className="text-xs text-slate-500">Value: {currentAgent.budget}</div>
-                  <div className="mt-2 inline-flex items-center gap-1 text-[11px] font-semibold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded-md border border-indigo-100">
-                    <Zap className="w-3 h-3 text-indigo-600" />
+                <div className="rounded-xl border border-slate-200 bg-white p-2.5 sm:p-3 shadow-xs">
+                  <div className="text-[10px] font-medium text-slate-400 uppercase tracking-wider">Campaign & Value</div>
+                  <div className="font-bold text-slate-900 text-xs sm:text-sm mt-0.5 truncate">{currentAgent.campaign}</div>
+                  <div className="text-[11px] text-slate-500">Value: {currentAgent.budget}</div>
+                  <div className="mt-1.5 inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-semibold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded-md border border-indigo-100">
+                    <Zap className="w-3 h-3 text-indigo-600 flex-shrink-0" />
                     <span>480ms AI Latency</span>
                   </div>
                 </div>
               </div>
 
               {/* Live Speech-to-Text Conversation Transcript Box */}
-              <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-3.5 mb-4 space-y-2.5">
-                <div className="flex items-center justify-between text-xs font-semibold text-slate-700 border-b border-slate-200/80 pb-1.5">
+              <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-2.5 sm:p-3.5 mb-3 sm:mb-4 space-y-2">
+                <div className="flex items-center justify-between text-[11px] sm:text-xs font-semibold text-slate-700 border-b border-slate-200/80 pb-1.5">
                   <span className="flex items-center gap-1.5">
-                    <Mic className="w-3.5 h-3.5 text-indigo-600" />
-                    Live Audio Dialogue & Natural Flow
+                    <Mic className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-indigo-600 flex-shrink-0" />
+                    <span>Live Audio Dialogue</span>
                   </span>
-                  <span className="text-[10px] text-emerald-600 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-100">
-                    Zero Hallucination Guarantee
+                  <span className="text-[9px] sm:text-[10px] text-emerald-600 font-bold bg-emerald-50 px-1.5 py-0.2 rounded border border-emerald-100">
+                    Zero Hallucination
                   </span>
                 </div>
 
-                <div className="space-y-2 text-xs">
+                <div className="space-y-1.5 text-[11px] sm:text-xs">
                   {currentAgent.transcript.map((msg, mIdx) => (
                     <div
                       key={mIdx}
-                      className={`p-2.5 rounded-lg border ${
+                      className={`p-2 sm:p-2.5 rounded-lg border ${
                         msg.sender.includes("AI")
                           ? "bg-white border-indigo-100 text-slate-800 shadow-2xs"
-                          : "bg-indigo-50/60 border-indigo-200/60 text-slate-900 font-medium ml-4"
+                          : "bg-indigo-50/60 border-indigo-200/60 text-slate-900 font-medium ml-2 sm:ml-4"
                       }`}
                     >
-                      <div className="flex items-center justify-between mb-1 text-[10px]">
+                      <div className="flex items-center justify-between mb-0.5 text-[10px]">
                         <span className="font-bold text-indigo-700">{msg.sender}</span>
                         <span className="text-slate-400 font-mono">{msg.time}</span>
                       </div>
@@ -437,51 +430,45 @@ export default function Hero() {
               </div>
 
               {/* AI Auto-Action & Webhook Notification */}
-              <div className="rounded-xl border border-emerald-200 bg-emerald-50/50 p-3 flex items-start gap-2.5 text-xs text-emerald-900">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
-                <div className="flex-1">
-                  <div className="font-semibold text-emerald-950 flex items-center justify-between">
+              <div className="rounded-xl border border-emerald-200 bg-emerald-50/50 p-2.5 sm:p-3 flex items-start gap-2 text-xs text-emerald-900">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                <div className="flex-1 min-w-0">
+                  <div className="font-semibold text-emerald-950 flex items-center justify-between text-[11px] sm:text-xs">
                     <span>Instant Workflow Execution</span>
-                    <span className="text-[10px] font-mono text-emerald-700">Webhook Status: 200 OK</span>
+                    <span className="text-[9px] sm:text-[10px] font-mono text-emerald-700">200 OK</span>
                   </div>
-                  <p className="text-emerald-800 mt-0.5 leading-relaxed">{currentAgent.aiAction}</p>
+                  <p className="text-emerald-800 mt-0.5 leading-relaxed text-[10.5px] sm:text-xs">{currentAgent.aiAction}</p>
                 </div>
-              </div>
-
-              {/* Subtle footer label */}
-              <div className="mt-3 text-center">
-                <span className="text-[11px] text-slate-400">
-                  ⚡ Interactive voice preview simulator • Click agents above to view real multi-industry conversations
-                </span>
               </div>
             </div>
           </div>
         </div>
 
         {/* Enterprise Social Proof Logos & Trust Bar */}
-        <div className="mt-16 sm:mt-20 pt-10 border-t border-slate-200/80">
-          <p className="text-center text-xs font-semibold uppercase tracking-wider text-slate-400 mb-6">
+        <div className="mt-10 sm:mt-16 pt-8 border-t border-slate-200/80">
+          <p className="text-center text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4 sm:mb-6">
             Empowering modern sales & calling operations across India
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-12 opacity-75 grayscale hover:grayscale-0 transition-all duration-300">
-            <div className="flex items-center gap-2 font-bold text-slate-700 text-sm">
-              <Building className="w-4 h-4 text-indigo-600" />
-              <span>Godrej Properties Partners</span>
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 lg:gap-12 opacity-80">
+            <div className="flex items-center gap-1.5 font-bold text-slate-700 text-xs sm:text-sm">
+              <Building className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-indigo-600 flex-shrink-0" />
+              <span>Godrej Properties</span>
             </div>
-            <div className="flex items-center gap-2 font-bold text-slate-700 text-sm">
-              <GraduationCap className="w-4 h-4 text-indigo-600" />
-              <span>Allen & Aakash Institutes</span>
+            <div className="flex items-center gap-1.5 font-bold text-slate-700 text-xs sm:text-sm">
+              <GraduationCap className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-indigo-600 flex-shrink-0" />
+              <span>Allen & Aakash</span>
             </div>
-            <div className="flex items-center gap-2 font-bold text-slate-700 text-sm">
-              <Briefcase className="w-4 h-4 text-indigo-600" />
-              <span>Square Yards Network</span>
+            <div className="flex items-center gap-1.5 font-bold text-slate-700 text-xs sm:text-sm">
+              <Briefcase className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-indigo-600 flex-shrink-0" />
+              <span>Square Yards</span>
             </div>
-            <div className="flex items-center gap-2 font-bold text-slate-700 text-sm">
-              <PhoneCall className="w-4 h-4 text-indigo-600" />
-              <span>500+ Active Outbound Call Desks</span>
+            <div className="flex items-center gap-1.5 font-bold text-slate-700 text-xs sm:text-sm">
+              <PhoneCall className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-indigo-600 flex-shrink-0" />
+              <span>500+ Outbound Desks</span>
             </div>
           </div>
         </div>
+
         {/* Live Call Simulation Modal */}
         <LiveCallModal
           isOpen={isLiveCallModalOpen}

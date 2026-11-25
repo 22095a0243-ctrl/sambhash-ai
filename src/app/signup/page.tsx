@@ -5,11 +5,11 @@ import { PhoneCall, ArrowLeft, Lock, Mail, User, Building, Phone, ArrowRight, Ch
 
 export default function SignupPage() {
   return (
-    <div className="min-h-screen bg-[#FAFAFC] flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[#FAFAFC] flex flex-col justify-center py-8 sm:py-12 px-3 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-xs font-medium text-slate-500 hover:text-slate-900 transition-colors mb-6"
+          className="inline-flex items-center gap-2 text-xs font-medium text-slate-500 hover:text-slate-900 transition-colors mb-4 sm:mb-6"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Back to Sambhash AI Homepage</span>
@@ -20,16 +20,16 @@ export default function SignupPage() {
             <PhoneCall className="w-5 h-5" />
           </div>
         </div>
-        <h1 className="text-2xl font-bold tracking-tight text-slate-900">
+        <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-900">
           Create your Sambhash AI Account
         </h1>
-        <p className="mt-1 text-sm text-slate-600">
+        <p className="mt-1 text-xs sm:text-sm text-slate-600">
           Start configuring AI voice agents and launching calling workflows
         </p>
       </div>
 
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md px-4 sm:px-0">
-        <div className="bg-white py-8 px-6 sm:px-8 border border-slate-200/90 rounded-2xl shadow-sm">
+      <div className="mt-6 sm:mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+        <div className="bg-white py-6 sm:py-8 px-4 sm:px-8 border border-slate-200/90 rounded-2xl shadow-sm">
           <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
             <div>
               <label

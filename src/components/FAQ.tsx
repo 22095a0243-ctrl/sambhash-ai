@@ -56,17 +56,17 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-slate-50/60 border-b border-slate-200/70">
+    <section id="faq" className="py-12 sm:py-20 lg:py-24 bg-slate-50/60 border-b border-slate-200/70">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <span className="text-xs font-semibold tracking-wider uppercase text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">
             Frequently Asked Questions
           </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+          <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900">
             Answers to Common Questions.
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+          <p className="mt-3 text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed">
             Everything you need to know about setting up and scaling calling campaigns with Sambhash AI.
           </p>
         </div>
@@ -83,10 +83,10 @@ export default function FAQ() {
                 <button
                   type="button"
                   onClick={() => toggleAccordion(index)}
-                  className="w-full px-5 sm:px-6 py-4 sm:py-5 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+                  className="w-full px-4 sm:px-6 py-3.5 sm:py-5 text-left flex items-center justify-between gap-3 sm:gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-base sm:text-lg font-semibold text-slate-900">
+                  <span className="text-sm sm:text-base lg:text-lg font-semibold text-slate-900">
                     {faq.question}
                   </span>
                   <div

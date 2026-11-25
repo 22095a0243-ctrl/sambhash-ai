@@ -77,59 +77,59 @@ export default function ProductCapabilities() {
   ];
 
   return (
-    <section id="features" className="py-20 sm:py-24 bg-white border-b border-slate-200/70 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="features" className="py-12 sm:py-20 lg:py-24 bg-white border-b border-slate-200/70 relative">
+      <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-xs font-semibold text-indigo-700">
             <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
             <span>Enterprise-Grade Architecture</span>
           </div>
-          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-4xl font-extrabold tracking-tight text-slate-900">
+          <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-slate-900 leading-snug">
             Everything You Need to Run High-Converting Voice Operations.
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
             From natural multi-turn prompt engineering to bulk campaign execution, Sambhash AI delivers the complete toolchain for modern revenue teams.
           </p>
         </div>
 
         {/* 6 Core Capabilities Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-10 sm:mb-16">
           {capabilities.map((cap, index) => {
             const Icon = cap.icon;
             return (
               <div
                 key={index}
-                className="group relative rounded-2xl border border-slate-200/90 bg-white p-7 shadow-sm hover:shadow-xl hover:border-indigo-300 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+                className="group relative rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-7 shadow-xs hover:shadow-xl hover:border-indigo-300 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
                   {/* Top Bar with Icon and Badge */}
-                  <div className="flex items-center justify-between mb-5">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-50 to-indigo-100/60 text-indigo-600 border border-indigo-200/60 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white shadow-xs">
-                      <Icon className="w-6 h-6" />
+                  <div className="flex items-center justify-between mb-4 sm:mb-5">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-indigo-50 to-indigo-100/60 text-indigo-600 border border-indigo-200/60 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white shadow-2xs">
+                      <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
-                    <span className={`text-[11px] font-semibold px-2.5 py-0.5 rounded-full border ${cap.badgeColor}`}>
+                    <span className={`text-[10px] sm:text-[11px] font-semibold px-2 sm:px-2.5 py-0.5 rounded-full border ${cap.badgeColor}`}>
                       {cap.badge}
                     </span>
                   </div>
 
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-indigo-600 block mb-1">
+                  <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-indigo-600 block mb-1">
                     {cap.tag}
                   </span>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2.5 group-hover:text-indigo-600 transition-colors">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors">
                     {cap.title}
                   </h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     {cap.description}
                   </p>
                 </div>
 
                 {/* Bottom Metric Pill */}
-                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700">
+                <div className="mt-5 sm:mt-6 pt-3.5 sm:pt-4 border-t border-slate-100 flex items-center justify-between text-[11px] sm:text-xs font-semibold text-slate-700">
                   <span className="flex items-center gap-1.5 text-slate-500">
-                    <Zap className="w-3.5 h-3.5 text-indigo-600" />
-                    {cap.metric}
+                    <Zap className="w-3.5 h-3.5 text-indigo-600 flex-shrink-0" />
+                    <span className="truncate">{cap.metric}</span>
                   </span>
                   <span className="text-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity">
                     →
@@ -141,38 +141,38 @@ export default function ProductCapabilities() {
         </div>
 
         {/* Visual AI Voice Architecture Card */}
-        <div className="rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 text-white p-6 sm:p-10 shadow-2xl overflow-hidden relative">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
-            <div className="lg:col-span-7 space-y-4">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-xs font-semibold">
-                <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
+        <div className="rounded-2xl sm:rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 text-white p-5 sm:p-8 lg:p-10 shadow-2xl overflow-hidden relative">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center relative z-10">
+            <div className="lg:col-span-7 space-y-3 sm:space-y-4">
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-[11px] sm:text-xs font-semibold">
+                <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-indigo-400" />
                 <span>Next-Gen Neural Speech Engine</span>
               </div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white tracking-tight leading-snug">
                 Sub-650ms Turn-Taking with Native Interruption Recovery
               </h3>
-              <p className="text-sm text-slate-300 leading-relaxed max-w-xl">
-                Unlike traditional robotic IVRs or high-latency LLM wrappers, Sambhash AI pairs acoustic stream processing with real-time semantic tokenization. When a human customer interrupts mid-sentence, the AI ceases audio streaming in under 80ms and adapts seamlessly.
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl">
+                Unlike traditional robotic IVRs or high-latency wrappers, Sambhash AI pairs acoustic stream processing with real-time semantic tokenization. When a human customer interrupts mid-sentence, the AI ceases audio streaming in under 80ms and adapts seamlessly.
               </p>
-              <div className="grid grid-cols-3 gap-3 pt-2 text-left">
-                <div className="p-3 rounded-xl bg-white/5 border border-white/10">
-                  <div className="text-xl font-extrabold text-emerald-400 font-mono">&lt;80ms</div>
-                  <div className="text-[10px] text-slate-400 font-medium mt-0.5">Barge-In Cutoff</div>
+              <div className="grid grid-cols-3 gap-2 sm:gap-3 pt-2 text-left">
+                <div className="p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/10">
+                  <div className="text-lg sm:text-xl font-extrabold text-emerald-400 font-mono">&lt;80ms</div>
+                  <div className="text-[9px] sm:text-[10px] text-slate-400 font-medium mt-0.5">Barge-In Cutoff</div>
                 </div>
-                <div className="p-3 rounded-xl bg-white/5 border border-white/10">
-                  <div className="text-xl font-extrabold text-indigo-300 font-mono">10+</div>
-                  <div className="text-[10px] text-slate-400 font-medium mt-0.5">Indian Accents</div>
+                <div className="p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/10">
+                  <div className="text-lg sm:text-xl font-extrabold text-indigo-300 font-mono">10+</div>
+                  <div className="text-[9px] sm:text-[10px] text-slate-400 font-medium mt-0.5">Indian Accents</div>
                 </div>
-                <div className="p-3 rounded-xl bg-white/5 border border-white/10">
-                  <div className="text-xl font-extrabold text-cyan-400 font-mono">99.4%</div>
-                  <div className="text-[10px] text-slate-400 font-medium mt-0.5">ASR Accuracy</div>
+                <div className="p-2.5 sm:p-3 rounded-xl bg-white/5 border border-white/10">
+                  <div className="text-lg sm:text-xl font-extrabold text-cyan-400 font-mono">99.4%</div>
+                  <div className="text-[9px] sm:text-[10px] text-slate-400 font-medium mt-0.5">ASR Accuracy</div>
                 </div>
               </div>
             </div>
 
             {/* Neural Graphic */}
             <div className="lg:col-span-5 relative flex justify-center">
-              <div className="relative rounded-2xl overflow-hidden border border-indigo-500/30 shadow-2xl shadow-indigo-500/20 max-w-sm w-full">
+              <div className="relative rounded-2xl overflow-hidden border border-indigo-500/30 shadow-xl shadow-indigo-500/20 max-w-xs sm:max-w-sm w-full">
                 <img
                   src="/images/hero-ai-voice.svg"
                   alt="Sambhash AI Neural Voice Engine"

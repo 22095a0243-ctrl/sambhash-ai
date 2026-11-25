@@ -63,33 +63,33 @@ export default function ComparisonMatrix() {
   ];
 
   return (
-    <section className="py-20 sm:py-24 bg-white border-b border-slate-200/70 relative">
+    <section className="py-12 sm:py-20 lg:py-24 bg-white border-b border-slate-200/70 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-xs font-semibold text-indigo-700">
             <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
             <span>Honest Solution Comparison</span>
           </div>
-          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-4xl font-extrabold tracking-tight text-slate-900">
+          <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-slate-900">
             Why Modern Indian Sales Teams Choose Sambhash AI.
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+          <p className="mt-3 text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed">
             See how Sambhash AI stacks up against traditional manual telecallers, generic US voice platforms, and obsolete IVR dialers.
           </p>
         </div>
 
         {/* Comparison Table */}
-        <div className="max-w-5xl mx-auto rounded-3xl border border-slate-200 shadow-xl overflow-hidden bg-white">
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse text-xs sm:text-sm">
+        <div className="max-w-5xl mx-auto rounded-2xl sm:rounded-3xl border border-slate-200 shadow-xl overflow-hidden bg-white">
+          <div className="overflow-x-auto scrollbar-none">
+            <table className="w-full min-w-[560px] text-left border-collapse text-xs sm:text-sm">
               <thead>
                 <tr className="border-b border-slate-200 bg-slate-50/80">
-                  <th className="py-5 px-6 font-bold text-slate-900 w-2/5">
+                  <th className="py-3.5 sm:py-5 px-3.5 sm:px-6 font-bold text-slate-900 w-2/5">
                     Operational Capability
                   </th>
-                  <th className="py-5 px-4 font-extrabold text-indigo-600 bg-indigo-50/70 border-x border-indigo-100 text-center w-1/4">
+                  <th className="py-3.5 sm:py-5 px-3 sm:px-4 font-extrabold text-indigo-600 bg-indigo-50/70 border-x border-indigo-100 text-center w-1/4">
                     <div className="flex items-center justify-center gap-1.5">
                       <span>Sambhash AI</span>
                       <span className="text-[10px] bg-indigo-600 text-white px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
@@ -97,10 +97,10 @@ export default function ComparisonMatrix() {
                       </span>
                     </div>
                   </th>
-                  <th className="py-5 px-4 font-semibold text-slate-700 text-center w-1/5">
+                  <th className="py-3.5 sm:py-5 px-3 sm:px-4 font-semibold text-slate-700 text-center w-1/5">
                     Human Telecaller Desks
                   </th>
-                  <th className="py-5 px-4 font-semibold text-slate-700 text-center w-1/5">
+                  <th className="py-3.5 sm:py-5 px-3 sm:px-4 font-semibold text-slate-700 text-center w-1/5">
                     US-Based AI (Vapi/Bland)
                   </th>
                 </tr>
@@ -113,12 +113,12 @@ export default function ComparisonMatrix() {
                       item.highlight ? "bg-slate-50/30" : ""
                     }`}
                   >
-                    <td className="py-4 px-6 font-medium text-slate-800">
+                    <td className="py-3 sm:py-4 px-3.5 sm:px-6 font-medium text-slate-800">
                       {item.title}
                     </td>
 
                     {/* Sambhash AI Column (Highlighted) */}
-                    <td className="py-4 px-4 font-bold text-indigo-700 bg-indigo-50/40 border-x border-indigo-100/80 text-center">
+                    <td className="py-3 sm:py-4 px-3 sm:px-4 font-bold text-indigo-700 bg-indigo-50/40 border-x border-indigo-100/80 text-center">
                       <div className="flex items-center justify-center gap-1.5">
                         <Check className="w-4 h-4 text-emerald-600 stroke-[3] flex-shrink-0" />
                         <span>{item.sambhash}</span>
@@ -126,12 +126,12 @@ export default function ComparisonMatrix() {
                     </td>
 
                     {/* Human Telecallers */}
-                    <td className="py-4 px-4 text-slate-600 text-center">
+                    <td className="py-3 sm:py-4 px-3 sm:px-4 text-slate-600 text-center">
                       {item.humans}
                     </td>
 
                     {/* US Based AI */}
-                    <td className="py-4 px-4 text-slate-500 text-center">
+                    <td className="py-3 sm:py-4 px-3 sm:px-4 text-slate-500 text-center">
                       {item.usAi}
                     </td>
                   </tr>
@@ -140,7 +140,7 @@ export default function ComparisonMatrix() {
             </table>
           </div>
 
-          <div className="bg-slate-50 p-4 border-t border-slate-200 text-center text-xs text-slate-500">
+          <div className="bg-slate-50 p-3 sm:p-4 border-t border-slate-200 text-center text-xs text-slate-500">
             Based on average public pricing and operational deployment benchmarks in India as of 2026.
           </div>
         </div>

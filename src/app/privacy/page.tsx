@@ -3,17 +3,17 @@ import { ArrowLeft, PhoneCall } from "lucide-react";
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-[#FAFAFC] py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[#FAFAFC] py-8 sm:py-16 px-3 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-xs font-medium text-slate-500 hover:text-slate-900 transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-xs font-medium text-slate-500 hover:text-slate-900 transition-colors mb-6 sm:mb-8"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Back to Sambhash AI Homepage</span>
         </Link>
 
-        <div className="bg-white rounded-2xl border border-slate-200/90 p-8 sm:p-10 shadow-sm">
+        <div className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-10 shadow-sm">
           <div className="flex items-center gap-3 mb-6 pb-6 border-b border-slate-100">
             <div className="w-9 h-9 rounded-lg bg-indigo-600 flex items-center justify-center text-white">
               <PhoneCall className="w-4 h-4" />

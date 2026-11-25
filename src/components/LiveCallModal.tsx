@@ -174,10 +174,10 @@ export default function LiveCallModal({ isOpen, onClose }: LiveCallModalProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/80 backdrop-blur-md animate-in fade-in duration-200">
       
       {/* Container */}
-      <div className="relative w-full max-w-lg bg-slate-900 border border-slate-700/80 rounded-3xl shadow-2xl overflow-hidden text-white">
+      <div className="relative w-full max-w-lg max-h-[92vh] overflow-y-auto scrollbar-none bg-slate-900 border border-slate-700/80 rounded-2xl sm:rounded-3xl shadow-2xl text-white">
         
         {/* Close Button */}
         <button

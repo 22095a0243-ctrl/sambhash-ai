@@ -1,5 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#4F46E5",
+};
 
 export const metadata: Metadata = {
   title: "Sambhash AI — AI Voice Calling & Business Automation Platform",
@@ -46,7 +53,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className="min-h-screen bg-[#FAFAFC] text-[#0F172A] antialiased selection:bg-indigo-100 selection:text-indigo-900">
+      <body className="min-h-screen bg-[#FAFAFC] text-[#0F172A] antialiased selection:bg-indigo-100 selection:text-indigo-900 overflow-x-hidden w-full">
         {children}
       </body>
     </html>

@@ -52,7 +52,7 @@ export default function SecurityCompliance() {
   ];
 
   return (
-    <section className="py-20 sm:py-24 bg-slate-900 text-white border-b border-slate-800 relative overflow-hidden">
+    <section className="py-12 sm:py-20 lg:py-24 bg-slate-900 text-white border-b border-slate-800 relative overflow-hidden">
       {/* Background ambient mesh */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -60,27 +60,27 @@ export default function SecurityCompliance() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/10 text-xs font-semibold text-indigo-300">
             <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
             <span>Bank-Grade Trust & Regulatory Safety</span>
           </div>
-          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-4xl font-extrabold tracking-tight text-white">
+          <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white">
             Built for Enterprises Where Compliance Is Non-Negotiable.
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
+          <p className="mt-3 text-sm sm:text-base lg:text-lg text-slate-300 leading-relaxed">
             From BFSI regulatory standards to Indian telecom laws, Sambhash AI is engineered to protect your brand reputation and customer privacy.
           </p>
         </div>
 
         {/* 6 Security Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {pillars.map((item, idx) => {
             const Icon = item.icon;
             return (
               <div
                 key={idx}
-                className="rounded-2xl border border-slate-800 bg-slate-800/60 p-6 sm:p-7 shadow-lg hover:border-indigo-500/60 hover:bg-slate-800/90 transition-all duration-300 flex flex-col justify-between"
+                className="rounded-2xl border border-slate-800 bg-slate-800/60 p-5 sm:p-7 shadow-lg hover:border-indigo-500/60 hover:bg-slate-800/90 transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">

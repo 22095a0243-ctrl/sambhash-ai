@@ -73,31 +73,31 @@ export default function UseCases() {
   ];
 
   return (
-    <section id="use-cases" className="py-20 sm:py-24 bg-white border-b border-slate-200/70 relative">
+    <section id="use-cases" className="py-12 sm:py-20 lg:py-24 bg-white border-b border-slate-200/70 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-xs font-semibold text-indigo-700">
             <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
             <span>Proven Industry Workflows</span>
           </div>
-          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-4xl font-extrabold tracking-tight text-slate-900">
+          <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-slate-900">
             Engineered for High-Conversion Conversations.
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+          <p className="mt-3 text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed">
             Whether booking property tours or confirming high-value ecommerce orders, Sambhash AI is configured with domain-specific vocabulary and prompt structures.
           </p>
         </div>
 
         {/* 4 Use Cases Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
           {cases.map((item, idx) => {
             const Icon = item.icon;
             return (
               <div
                 key={idx}
-                className="rounded-3xl border border-slate-200/90 bg-white p-7 sm:p-8 shadow-sm hover:shadow-xl hover:border-indigo-300 transition-all duration-300 flex flex-col justify-between"
+                className="rounded-2xl sm:rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-8 shadow-sm hover:shadow-xl hover:border-indigo-300 transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-start justify-between gap-4 mb-4">

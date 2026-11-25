@@ -65,27 +65,27 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="py-20 sm:py-24 bg-slate-50/70 border-b border-slate-200/70 relative">
+    <section id="pricing" className="py-12 sm:py-20 lg:py-24 bg-slate-50/70 border-b border-slate-200/70 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-12">
+        <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-12">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-xs font-semibold text-indigo-700">
             <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
             <span>Usage-Based Transparent Pricing</span>
           </div>
-          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-4xl font-extrabold tracking-tight text-slate-900">
+          <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-slate-900">
             Pay Only for Connected Talk Time.
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+          <p className="mt-3 text-sm sm:text-base lg:text-lg text-slate-600 leading-relaxed">
             No expensive software seats or forced annual locks. Recharge your wallet in INR and get exact per-minute drawdown.
           </p>
 
           {/* Billing Cycle Toggle */}
-          <div className="mt-8 inline-flex items-center p-1 bg-white border border-slate-200 rounded-xl shadow-xs">
+          <div className="mt-6 sm:mt-8 inline-flex items-center p-1 bg-white border border-slate-200 rounded-xl shadow-xs">
             <button
               onClick={() => setBillingCycle("standard")}
-              className={`px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all ${
+              className={`px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all ${
                 billingCycle === "standard"
                   ? "bg-indigo-600 text-white shadow-sm"
                   : "text-slate-600 hover:text-slate-900"
@@ -95,7 +95,7 @@ export default function Pricing() {
             </button>
             <button
               onClick={() => setBillingCycle("volume")}
-              className={`px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all flex items-center gap-1.5 ${
+              className={`px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all flex items-center gap-1.5 ${
                 billingCycle === "volume"
                   ? "bg-indigo-600 text-white shadow-sm"
                   : "text-slate-600 hover:text-slate-900"
@@ -110,11 +110,11 @@ export default function Pricing() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto items-stretch">
           {plans.map((plan, idx) => (
             <div
               key={idx}
-              className={`rounded-3xl bg-white border p-7 sm:p-8 flex flex-col justify-between transition-all duration-300 relative ${
+              className={`rounded-2xl sm:rounded-3xl bg-white border p-5 sm:p-8 flex flex-col justify-between transition-all duration-300 relative ${
                 plan.isPopular
                   ? "border-indigo-600 shadow-xl shadow-indigo-600/10 ring-2 ring-indigo-600 lg:-translate-y-2"
                   : "border-slate-200/90 shadow-sm hover:shadow-md hover:border-slate-300"
@@ -189,8 +189,8 @@ export default function Pricing() {
         </div>
 
         {/* GST & Wallet Clarity Note */}
-        <div className="mt-12 rounded-2xl border border-slate-200 bg-white p-6 max-w-4xl mx-auto shadow-sm">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-slate-600">
+        <div className="mt-8 sm:mt-12 rounded-2xl border border-slate-200 bg-white p-4 sm:p-6 max-w-4xl mx-auto shadow-sm">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 text-xs text-slate-600">
             <div className="flex items-start gap-2.5">
               <ShieldCheck className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
               <div>
